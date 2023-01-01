@@ -30,3 +30,10 @@ Route::middleware([
         return view('admin.index');
     })->name('dashboard');
 });
+
+// All  User Managament
+
+Route::prefix('users')->group(function(){
+
+    Route::get('view',[UserController::class, 'UserView'])->name('user.view');
+});
