@@ -5,7 +5,7 @@
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
     <div class="container-full">
-    
+
 
       <!-- Main content -->
       <section class="content">
@@ -17,7 +17,8 @@
 
            <div class="box">
               <div class="box-header with-border">
-                <h3 class="box-title">Data Table With Full Features</h3>
+                <h3 class="box-title">User List</h3>
+                <a href="#" class="btn btn-rounded btn-success mb-5" style="float: right">Add User</a>
               </div>
               <!-- /.box-header -->
               <div class="box-body">
