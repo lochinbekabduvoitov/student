@@ -16,6 +16,7 @@
 	<!-- Style-->
 	<link rel="stylesheet" href="{{ asset('backend/css/style.css') }}">
 	<link rel="stylesheet" href="{{ asset('backend/css/skin_color.css') }}">
+	<link rel="stylesheet" href="{{ asset('backend/css/toastr.css') }}">
 
   </head>
 
@@ -53,7 +54,26 @@
 	<!-- Sunny Admin App -->
 	<script src="{{ asset('backend/js/template.js') }}"></script>
 	<script src="{{ asset('backend/js/pages/dashboard.js') }}"></script>
+	<script src="{{ asset('backend/js/toastr.js') }}"></script>
 
-
+    <script>
+        @if (Session::has('message'))
+        var type="{{Session::get('alert-type','info')}}"
+        switch(type){
+            case 'info':
+                toastr.info("{{Session::get('message')}}");
+                break;
+            case 'success':
+                toastr.success("{{Session::get('message')}}");
+                break;
+            case 'warning':
+                toastr.warning("{{Session::get('message')}}");
+                break;
+            case 'error':
+                toastr.error("{{Session::get('message')}}");
+                break;
+        }
+        @endif
+    </script>
 </body>
 </html>
