@@ -48,4 +48,24 @@ class UserController extends Controller
 
         return view('backend.user.edit_users', compact('data'));
     }
+
+    public function UserUpdate(Request $request ,$id){
+        $validatedData =  $request->validate([
+            'email' => 'required|unique:users',
+            'name' => 'required',
+        ]);
+
+        $data= User::find($id);
+        $data->usertype=$request->usertype;
+        $data->name=$request->name;
+        $data->email=$request->email;
+        $data->save();
+
+        $notification =[
+            'message' => 'User Edit Successful',
+            'alert-type' =>'success'
+        ];
+
+        return redirect()->route('users.view')->with($notification);
+    }
 }

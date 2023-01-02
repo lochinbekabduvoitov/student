@@ -18,7 +18,7 @@
                <!-- /.box-header -->
                <div class="box-body">
 
-                <form action="{{ route('users.store') }}" method="POST" >
+                <form action="{{ route('users.update' , $data->id) }}" method="POST" >
                     @csrf
 
                     <div class="row">
