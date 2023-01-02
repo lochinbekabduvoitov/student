@@ -34,6 +34,6 @@ class UserController extends Controller
         $data->password=bcrypt($request->password);
         $data->save();
 
-        return redirect()->route('user.view');
+        return redirect()->route('users.view');
     }
 }
