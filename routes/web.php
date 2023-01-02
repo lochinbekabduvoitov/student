@@ -36,4 +36,5 @@ Route::middleware([
 Route::prefix('users')->group(function(){
 
     Route::get('view',[UserController::class, 'UserView'])->name('user.view');
+    Route::get('add',[UserController::class, 'UserAdd'])->name('user.add');
 });
