@@ -41,4 +41,11 @@ class UserController extends Controller
 
         return redirect()->route('users.view')->with($notification);
     }
+
+    public function UserEdit(Request $request , $id){
+
+        $data=User::find($id);
+
+        return view('backend.user.edit_users', compact('data'));
+    }
 }
