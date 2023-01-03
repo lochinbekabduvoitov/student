@@ -18,36 +18,36 @@
             <div class="box box-widget widget-user">
                 <!-- Add the bg color to the header using any of the bg-* classes -->
                 <div class="widget-user-header bg-black">
-                    <a href="#" class="btn btn-rounded btn-success " style="float:right">Add User</a>
+                    <a href="#" class="btn btn-rounded btn-success " style="float:right">Edit Profile</a>
                   <h3 class="widget-user-username">User name: {{$user->name}}</h3>
                   <h6 class="widget-user-desc">User type: {{$user->usertype}}</h6>
                   <h6 class="widget-user-desc">User email: {{$user->email}}</h6>
                 </div>
                 <div class="widget-user-image">
-                  <img class="rounded-circle" src="../images/user3-128x128.jpg" alt="User Avatar">
+                  <img class="rounded-circle" src="{{$user->image}}" alt="User Avatar">
                 </div>
                 <div class="box-footer">
                   <div class="row">
                     <div class="col-sm-4">
                       <div class="description-block">
-                        <h5 class="description-header">12K</h5>
-                        <span class="description-text">FOLLOWERS</span>
+                        <h5 class="description-header">Mobile Number</h5>
+                        <span class="description-text">{{$user->mobile}}</span>
                       </div>
                       <!-- /.description-block -->
                     </div>
                     <!-- /.col -->
                     <div class="col-sm-4 br-1 bl-1">
                       <div class="description-block">
-                        <h5 class="description-header">550</h5>
-                        <span class="description-text">FOLLOWERS</span>
+                        <h5 class="description-header">Address</h5>
+                        <span class="description-text">{{$user->address}}</span>
                       </div>
                       <!-- /.description-block -->
                     </div>
                     <!-- /.col -->
                     <div class="col-sm-4">
                       <div class="description-block">
-                        <h5 class="description-header">158</h5>
-                        <span class="description-text">TWEETS</span>
+                        <h5 class="description-header">Gender</h5>
+                        <span class="description-text">{{$user->gender}}</span>
                       </div>
                       <!-- /.description-block -->
                     </div>
