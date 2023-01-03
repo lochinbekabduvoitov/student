@@ -18,7 +18,7 @@
             <div class="box box-widget widget-user">
                 <!-- Add the bg color to the header using any of the bg-* classes -->
                 <div class="widget-user-header bg-black">
-                    <a href="#" class="btn btn-rounded btn-success " style="float:right">Edit Profile</a>
+                    <a href="{{ route('profile.edit')}}" class="btn btn-rounded btn-success " style="float:right">Edit Profile</a>
                   <h3 class="widget-user-username">User name: {{$user->name}}</h3>
                   <h6 class="widget-user-desc">User type: {{$user->usertype}}</h6>
                   <h6 class="widget-user-desc">User email: {{$user->email}}</h6>
@@ -35,7 +35,7 @@
                       </div>
                       <!-- /.description-block -->
                     </div>
-                    <!-- /.col --> 
+                    <!-- /.col -->
                     <div class="col-sm-4 br-1 bl-1">
                       <div class="description-block">
                         <h5 class="description-header">Address</h5>
