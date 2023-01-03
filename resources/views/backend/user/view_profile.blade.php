@@ -24,7 +24,7 @@
                   <h6 class="widget-user-desc">User email: {{$user->email}}</h6>
                 </div>
                 <div class="widget-user-image">
-                  <img class="rounded-circle" src="{{$user->image}}" alt="User Avatar">
+                  <img class="rounded-circle" src=" {{ (!empty($user->image))? url('/upload/userimages/'.$user->image): url('upload/noimages.jpg') }} " alt="User Avatar">
                 </div>
                 <div class="box-footer">
                   <div class="row">
@@ -35,7 +35,7 @@
                       </div>
                       <!-- /.description-block -->
                     </div>
-                    <!-- /.col -->
+                    <!-- /.col --> 
                     <div class="col-sm-4 br-1 bl-1">
                       <div class="description-block">
                         <h5 class="description-header">Address</h5>
