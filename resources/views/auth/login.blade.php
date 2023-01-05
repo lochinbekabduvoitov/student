@@ -18,7 +18,7 @@
 	<link rel="stylesheet" href="{{ asset('backend/css/skin_color.css') }}">
 
 </head>
-<body style="background: #8b5f5f" class="hold-transition theme-primary bg-gradient-primary">
+<body style="background: #5064a3" class="hold-transition theme-primary bg-gradient-primary">
 
 	<div class="container h-p100">
 		<div class="row align-items-center justify-content-md-center h-p100">
