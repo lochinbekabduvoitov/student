@@ -11,6 +11,6 @@ class StudentClassController extends Controller
     public function ViewStudent(){
 
         $data['allData'] = StudentClass::all();
-        return view('backend.setup.student_class',compact('data'));
+        return view('backend.setup.view_class',$data);
     }
 }
