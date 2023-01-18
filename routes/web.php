@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Backend\UserController;
 use App\Http\Controllers\Backend\ProfileController;
+use App\Http\Controllers\Backend\Setup\StudentClassController;
 
 /*
 |--------------------------------------------------------------------------
@@ -64,7 +65,7 @@ Route::prefix('profile')->group(function(){
 
 Route::prefix('setup')->group(function(){
 
-    Route::get('student/class/view',[ProfileController::class, 'ProfileView'])->name('student.class.view');
+    Route::get('student/class/view',[StudentClassController::class, 'ViewStudent'])->name('student.class.view');
 
 
 });
