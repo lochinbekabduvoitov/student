@@ -57,3 +57,14 @@ Route::prefix('profile')->group(function(){
     Route::get('password/view',[ProfileController::class, 'ProfilePasswordView'])->name('profile.password');
 
 });
+
+
+
+// All  User Managament
+
+Route::prefix('setup')->group(function(){
+
+    Route::get('student/class/view',[ProfileController::class, 'ProfileView'])->name('student.class.view');
+
+
+});

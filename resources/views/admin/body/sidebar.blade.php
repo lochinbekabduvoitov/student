@@ -25,8 +25,8 @@
       <!-- sidebar menu-->
       <ul class="sidebar-menu" data-widget="tree">
 
-		<li >
-          <a href="index.html">
+		<li  class=" {{ ($prefix == 'dashboard') ? 'active': '' }}" >
+          <a href="{{ route('dashboard')}}">
             <i data-feather="pie-chart"></i>
 			<span>Dashboard</span>
           </a>
@@ -58,6 +58,19 @@
             <li><a href="{{ route('profile.password')}}"><i class="ti-more"></i>Change Password</a></li>
           </ul>
         </li>
+
+        <li class="treeview {{ ($prefix == '/setup') ? 'active': '' }}">
+            <a href="#">
+              <i data-feather="mail"></i> <span>Setup Managament</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-right pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              <li><a href="{{ route('student.class.view') }}"><i class="ti-more"></i>Student Class</a></li>
+            </ul>
+          </li>
+
 
 
 
