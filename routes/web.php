@@ -61,11 +61,12 @@ Route::prefix('profile')->group(function(){
 
 
 
-// All  User Managament
+// All  Student class 
 
-Route::prefix('setup')->group(function(){
+Route::prefix('setups')->group(function(){
 
     Route::get('student/class/view',[StudentClassController::class, 'ViewStudent'])->name('student.class.view');
+    Route::get('student/class/add',[StudentClassController::class, 'StudentClassAdd'])->name('student.class.add');
 
 
 });

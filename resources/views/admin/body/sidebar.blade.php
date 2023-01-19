@@ -59,7 +59,7 @@
           </ul>
         </li>
 
-        <li class="treeview {{ ($prefix == '/setup') ? 'active': '' }}">
+        <li class="treeview {{ ($prefix == '/setups') ? 'active': '' }}">
             <a href="#">
               <i data-feather="mail"></i> <span>Setup Managament</span>
               <span class="pull-right-container">
@@ -71,10 +71,7 @@
             </ul>
           </li>
 
-
-
-
-        <li class="header nav-small-cap">User Interface</li>
+         <li class="header nav-small-cap">User Interface</li>
 
         <li class="treeview">
           <a href="#">
