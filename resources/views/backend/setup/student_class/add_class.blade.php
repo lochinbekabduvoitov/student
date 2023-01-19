@@ -27,7 +27,8 @@ fas
                             <div class="form-group">
                                 <h5>Student Class Name <span class="text-danger">*</span></h5>
                                 <div class="controls">
-                                    <input type="password" name="name" class="form-control" required data-validation-required-message="This field is required"> </div>
+                                    <input type="text" name="name" class="form-control" required >
+                                </div>
                             </div>
                         </div>
 

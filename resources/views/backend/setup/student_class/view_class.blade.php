@@ -27,9 +27,9 @@
                       <thead>
                           <tr>
                               <th>SL</th>
-                              <th>Role</th>
+
                               <th>Name</th>
-                              <th>Email</th>
+                       
                               <th>Action</th>
                           </tr>
                       </thead>
