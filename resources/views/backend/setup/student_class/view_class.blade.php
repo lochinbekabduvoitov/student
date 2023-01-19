@@ -29,7 +29,7 @@
                               <th>SL</th>
 
                               <th>Name</th>
-                       
+
                               <th>Action</th>
                           </tr>
                       </thead>
@@ -38,9 +38,9 @@
 
                         <tr>
                             <td>{{$key+1}}</td>
-                            <td>{{$student->name}}</td>
+                            <td class="col-10">{{$student->name}}</td>
                             <td>
-                                <a href="{{ route('users.edit', $student->id)}}" class="btn btn-info">Edit</a>
+                                <a href="{{ route('student.class.edit', $student->id)}}" class="btn btn-info">Edit</a>
                                 <a href="{{ route('users.delete' ,$student->id)}}" id="delete" class="btn btn-danger">Delete</a>
                             </td>
                         </tr>
